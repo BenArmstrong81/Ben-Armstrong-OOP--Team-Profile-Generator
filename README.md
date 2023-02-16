@@ -1,4 +1,4 @@
-# Ben Armstrong - Object-Oriented Programming: Team Profile Generator
+# Ben Armstrong - Object Oriented Programming: Team Profile Generator
 
 ## Your Task
 Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
@@ -45,7 +45,6 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 The styling in the image is just an example, so feel free to add your own.
 
 ## Getting Started
-
 This Challenge will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
 
 Because this Challenge will require a video submission, refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
@@ -78,110 +77,70 @@ It is recommended that you start with a directory structure that looks like the 
 The application must include `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) must ALL pass.
 
 The first class is an `Employee` parent class with the following properties and methods:
-
 * `name`
-
 * `id`
-
 * `email`
-
 * `getName()`
-
 * `getId()`
-
 * `getEmail()`
-
 * `getRole()`&mdash;returns `'Employee'`
-
 The other three classes will extend `Employee`.
-
 In addition to `Employee`'s properties and methods, `Manager` will also have the following:
-
 * `officeNumber`
-
 * `getRole()`&mdash;overridden to return `'Manager'`
-
 In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
-
 * `github`&mdash;GitHub username
-
 * `getGithub()`
-
 * `getRole()`&mdash;overridden to return `'Engineer'`
-
 In addition to `Employee`'s properties and methods, `Intern` will also have the following:
-
 * `school`
-
 * `getSchool()`
-
 * `getRole()`&mdash;overridden to return `'Intern'`
-
 Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
 ## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Deliverables: 15%
-
 * A sample HTML file generated using the application must be submitted.
-
 * Your GitHub repository containing your application code.
-
-### Walkthrough Video: 32%
-
 * A walkthrough video that demonstrates the functionality of the Team Profile Generator and passing tests must be submitted, and a link to the video should be included in your README file.
-
 * The walkthrough video must show all four tests passing from the command line.
-
 * The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
 * The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
 * The walkthrough video must demonstrate a generated HTML file that matches the user input.
-
-### Technical Acceptance Criteria: 40%
-
 * Satisfies all of the preceding acceptance criteria plus the following:
-
   * Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
-
   * Uses the [Jest package](https://www.npmjs.com/package/jest) for a suite of unit tests.
-
   * The application must have `Employee`, `Manager`, `Engineer`, and `Intern` classes.
-
-### Repository Quality: 13%
-
 * Repository has a unique name.
-
 * Repository follows best practices for file structure and naming conventions.
-
 * Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
 * Repository contains multiple descriptive commit messages.
-
 * Repository contains a high-quality readme with description and a link to a walkthrough video.
 
 ## Review
-
 You are required to submit the following for review:
-
 * A walkthrough video that demonstrates the functionality of the application and passing tests.
-
 * A sample HTML file generated using your application.
-
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
 
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## What I Learned
+We had a great introduction to Node.js last week which we build up on with a focus on OOP (Object Oriented Programming). Modules included but not limited to Constructors, Prototypes, Promises, Tests, Classes and much more. 
+
+## What Problems Did we Solve?
+We started with nothing and I had to create a index.js file that used Node.js to create a HTML file from scratch that would be generated up on user input. The user input was captured using Inquirer. We also used 'tests'to ensure our code was built solidly and reducing bugs. 
+
+# Installation
+N/A
+
+# Usage
+To use and view this challenge you will need to fork or clone this repo to your machine. Then using intergrated terminal you can luanch "npm start", fill in the information as prompted and the HTML file will be generated. You can then right click on the generated HTML file and view in the web browser :-)
+
+The following image shows the web application's appearance:
+
+![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./assets/images/Bens-WeatherApp-Deployed-ScreenShot.png)
+
+# Credits
+With special thanks to the UniSA Full Stack Web Development Class.
+
+# License
+
+Please refer to the LICENSE in the repo.
