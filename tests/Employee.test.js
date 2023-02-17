@@ -1,5 +1,4 @@
 // The first class is an Employee parent class with the following properties and methods:
-
 // name
 // id
 // email
@@ -9,16 +8,17 @@
 // getRole()—returns 'Employee' The other three classes will extend Employee.
 // Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
-const { describe } = require('yargs');
-const Employee = require('../lib/Employee');
 
+//--------------------Const for File:
+const Employee = require('../lib/Employee');
+//--------------------Initializing "Employee":
 describe('Employee', () => {
-    it('Correctly displays Employees Name', () => {
+    it('Correctly displays a new Employee', () => {
         const Employee = new Employee ();
         expect(typeof(Employee)).toBe("object");
     });
 });
-
+//--------------------Test for Name:
 describe("getName", () => {
     it("Correctly displays Employees Name", () => {
         const Name = "Ben";
@@ -26,7 +26,7 @@ describe("getName", () => {
         expect(Employee.getName()).toBe(Name);
     });
 });
-
+//--------------------Test for ID:
 describe('getId', () => {
     it('Correctly displays Employees ID', () => {
         const id = 1;
@@ -34,7 +34,7 @@ describe('getId', () => {
         expect(Employee.getId()).toBe(id);
     });
 });
-
+//--------------------Test for Email:
 describe('getEmail', () => {
     it('Correctly displays Employees email', () => {
         const Email = "ben@email.com";
@@ -42,7 +42,7 @@ describe('getEmail', () => {
         expect(Employee.getEmail()).toBe(Email);
     });
 });
-
+//--------------------Test to set the Role:
 describe('getRole', () => {
     it('Correctly displays Employees Role', () => {
         const Role = "Employee";
