@@ -9,6 +9,7 @@ const Manager = require('../lib/Manager');
 
 //--------------------Initializing "Manager":
 describe('Manager', () => {
+    describe("Initialization", () => {
     it('Correctly displays a new Manager', () => {
         const Manager = new Manager ();
         expect(typeof(Manager)).toBe("object");
@@ -19,7 +20,7 @@ describe("getOfficeNumber", () => {
     it("Correctly displays Managers Office Number", () => {
         const officeNumber = 123;
         const Manager = new Manager("Ben", 1, "ben@email.com", officeNumber);
-        expect(Manager.getManager()).toBe(officeNumber);
+        expect(Manager.officeNumber()).toBe(officeNumber);
     });
 });
 //--------------------getRole()—overridden to return 'Manager':
@@ -29,4 +30,5 @@ describe("getRole", () => {
         const Manager = new Manager("Ben", 1, "ben@email.com", 123);
         expect(Manager.getManager()).toBe(Role);
     });
+});
 });
