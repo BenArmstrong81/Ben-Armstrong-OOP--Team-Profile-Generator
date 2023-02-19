@@ -44,4 +44,44 @@ footer {
     height: 50px;
     margin-bottom: 0;
 }
-    
+
+/* Media Queries */
+
+  /* Tablets */
+  @media screen and (max-width: 920px){
+    .header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    }
+
+    .employee-card .card-header {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+    }
+
+  /* Mobiles */
+  @media screen and (max-width: 480px) {
+
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      }
+  
+      /* h1 {
+      font-size: 20px;
+      } */
+  
+      .employee-card .card-header {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+      }
+}
