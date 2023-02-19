@@ -1,0 +1,47 @@
+* {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.employee-card {
+  /* add card style */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 1%;
+  border-radius: 10px;
+  color: rgb(74, 77, 79);
+}
+
+.employee-card .card-header {
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+header .team-heading,
+.employee-card .card-header {
+    background: rgb(47,85,120);
+    background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
+    color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header h1,
+.employee-card .card-header {
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: rgb(47,85,120);
+    background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    margin-bottom: 0;
+}
+    

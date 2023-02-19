@@ -14,39 +14,39 @@ const Employee = require('../lib/Employee');
 //--------------------Initializing "Employee":
 describe('Employee', () => {
     it('Correctly displays a new Employee', () => {
-        const Employee = new Employee ();
-        expect(typeof(Employee)).toBe("object");
+        const employee = new Employee ();
+        expect(typeof(employee)).toBe("object");
     });
 });
-//--------------------Test for Name:
+//--------------------Test for name:
 describe("getName", () => {
-    it("Correctly displays Employees Name", () => {
-        const Name = "Ben";
-        const Employee = new Employee(Name);
-        expect(Employee.getName()).toBe(Name);
+    it("Correctly displays Employees name", () => {
+        const name = "Ben";
+        const employee = new Employee(name);
+        expect(employee.getName()).toBe(name);
     });
 });
 //--------------------Test for ID:
 describe('getId', () => {
     it('Correctly displays Employees ID', () => {
         const id = 1;
-        const Employee = new Employee("Ben", id);
-        expect(Employee.getId()).toBe(id);
+        const employee = new Employee("Ben", id);
+        expect(employee.getId()).toBe(id);
     });
 });
-//--------------------Test for Email:
+//--------------------Test for email:
 describe('getEmail', () => {
     it('Correctly displays Employees email', () => {
-        const Email = "ben@email.com";
-        const Employee = new Employee("Ben", 1, Email);
-        expect(Employee.getEmail()).toBe(Email);
+        const email = "ben@email.com";
+        const employee = new Employee("Ben", 1, email);
+        expect(employee.getEmail()).toBe(email);
     });
 });
 //--------------------Test to set the Role:
 describe('getRole', () => {
-    it('Correctly displays Employees Role', () => {
-        const Role = "Employee";
-        const Employee = new Employee("Ben", 1, "ben@email.com");
-        expect(Employee.getRole()).toBe(Role);
+    it('Correctly displays Employee as the Role', () => {
+        const role = "Employee";
+        const employee = new Employee("Ben", 1, "ben@email.com");
+        expect(employee.getRole()).toBe(role);
     });
 });

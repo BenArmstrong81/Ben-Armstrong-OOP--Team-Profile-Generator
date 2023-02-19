@@ -11,24 +11,24 @@ const Manager = require('../lib/Manager');
 describe('Manager', () => {
     describe("Initialization", () => {
     it('Correctly displays a new Manager', () => {
-        const Manager = new Manager ();
-        expect(typeof(Manager)).toBe("object");
+        const manager = new Manager ();
+        expect(typeof(manager)).toBe("object");
     });
 });
 //--------------------officeNumber for Manager:
 describe("getOfficeNumber", () => {
     it("Correctly displays Managers Office Number", () => {
         const officeNumber = 123;
-        const Manager = new Manager("Ben", 1, "ben@email.com", officeNumber);
-        expect(Manager.officeNumber()).toBe(officeNumber);
+        const manager = new Manager("Ben", 1, "ben@email.com", officeNumber);
+        expect(manager.getOfficeNumber()).toBe(officeNumber);
     });
 });
 //--------------------getRole()—overridden to return 'Manager':
 describe("getRole", () => {
     it("Correctly displays Managers Role", () => {
-        const Role = Manager;
-        const Manager = new Manager("Ben", 1, "ben@email.com", 123);
-        expect(Manager.getManager()).toBe(Role);
+        const role = "Manager";
+        const manager = new Manager("Ben", 1, "ben@email.com", 123);
+        expect(manager.getRole()).toBe(role);
     });
 });
 });

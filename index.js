@@ -4,11 +4,12 @@ const fs = require("fs");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const generateHTML = require("");
+const template = require("./src/template");
 //-------------Arrays for each Class; Manager, Engineer and Intern:
 const managers = [];
 const engineers = [];
 const interns = [];
+const employee =[];
 //-------------Const for Manager Questions (caught in an Array):
 const managerQuestions = [
 {
@@ -181,8 +182,9 @@ function promptData() {
         .then((managerAnswers) => {
             //----Creates/Captures User input for the Manager class:
             const manager = new Manager(managerAnswers.name,managerAnswers.id,managerAnswers.email,managerAnswers.officeNumber);
+            //console.log(manager);
             //----Pushes the Captured Manager input and pushes into the teamMembers array:
-            managers.push(manager);
+            employee.push(manager);
             //----Calls the function to prompt for additional team members, and aslo catches and logs any errors:
             promptTeamMembers();
         })
@@ -208,7 +210,7 @@ function promptTeamMembers() {
                         //----Creates/Captures User input for the Manager class:
                         const engineer = new Engineer(engineerAnswers.name,engineerAnswers.id,engineerAnswers.email,engineerAnswers.github);
                         //----Pushes the Captured Manager input and pushes into the teamMembers array:
-                        engineers.push(engineer);
+                        employee.push(engineer);
                         //----Calls the function to prompt for additional team members, and aslo catches and logs any errors:
                         promptTeamMembers();
                     })
@@ -222,7 +224,7 @@ function promptTeamMembers() {
                         //----Creates/Captures User input for the Manager class:
                         const intern = new Intern(internAnswers.name,internAnswers.id,internAnswers.email,internAnswers.school);
                         //----Pushes the Captured Manager input and pushes into the teamMembers array:
-                        interns.push(intern);
+                        employee.push(intern);
                         //----Calls the function to prompt for additional team members, and aslo catches and logs any errors:
                         promptTeamMembers();
                     })
@@ -230,12 +232,13 @@ function promptTeamMembers() {
                         console.error(error);
                     });
                 break;
-            case "I'm Done Adding Team Members Thank You":
+            case "I do not want to add any more team members thank you":
                 // call the function to generate the HTML file
-                const html = generateHTML(managers, engineers, interns);
-                fs.writeFile('./dist/index.html', html, err => {
+                //const html = generateHTML(employee);
+                //console.log( template.generateHTML(employee));
+                fs.writeFile('./dist/index.html',  template.generateHTML(employee), err => {
                 if (err) throw err;
-                console.log(chalk.bgYellow.bold("* Team Profile successfully generated! Check out the HTML file in /dist folder!"));
+                console.log("Team Profile successfully generated! Check out the HTML file in /dist folder!");
                 })
             }
         })
