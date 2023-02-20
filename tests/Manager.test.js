@@ -4,7 +4,7 @@
 // Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
 
-//--------------------Const for File:
+//--------------------Const for Manager File:
 const Manager = require('../lib/Manager');
 
 //--------------------Initializing "Manager":

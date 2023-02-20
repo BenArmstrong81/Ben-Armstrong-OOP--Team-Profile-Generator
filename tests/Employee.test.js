@@ -9,7 +9,7 @@
 // Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
 
-//--------------------Const for File:
+//--------------------Const for Emplayee File:
 const Employee = require('../lib/Employee');
 //--------------------Initializing "Employee":
 describe('Employee', () => {

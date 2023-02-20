@@ -1,11 +1,12 @@
+/*---------------Google Fonts:  */
 * {
     font-family: 'Indie Flower', cursive;
     font-family: 'Noto Serif', serif;
     font-family: 'Roboto', sans-serif;
 }
 
+/*---------------Card Styling that will be adopted to all user inputted cards:  */
 .employee-card {
-  /* add card style */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   margin: 1%;
   border-radius: 10px;
@@ -24,7 +25,7 @@ header .team-heading,
     background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
     color: white;
 }
-
+/*---------------Styling to Header Element:  */
 header h1 {
   font-size: 3rem;
 }
@@ -34,7 +35,7 @@ header h1,
   font-weight: bolder;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-
+/*---------------Styling to Footer Element:  */
 footer {
     background: rgb(47,85,120);
     background: linear-gradient(180deg, rgba(47,85,120,1) 0%, rgba(47,85,120,1) 35%, rgba(130,129,127,1) 100%);
@@ -45,18 +46,23 @@ footer {
     margin-bottom: 0;
 }
 
-/* Media Queries */
+/*---------------Media Queries */
 
-  /* Tablets */
+  /*-----Tablets */
   @media screen and (max-width: 920px){
     .header {
+      display: flex;
+      flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     }
-
+    .justify-content-center {
+      display: flex;
+    flex-wrap: wrap;
+    }
     .employee-card .card-header {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -64,21 +70,23 @@ footer {
     }
     }
 
-  /* Mobiles */
+  /*-----Mobiles */
   @media screen and (max-width: 480px) {
 
     .header {
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
       text-align: center;
       }
   
-      /* h1 {
-      font-size: 20px;
-      } */
-  
+      .justify-content-center {
+        display: flex;
+      flex-wrap: wrap;
+      }
       .employee-card .card-header {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;

@@ -4,7 +4,7 @@
 // getRole()—overridden to return 'Intern' Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
 
-//--------------------Const for File:
+//--------------------Const for Intern File:
 const Intern = require('../lib/Intern');
 //--------------------Initializing "Intern":
 describe('Intern', () => {

@@ -5,7 +5,7 @@
 // Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
 
 
-//--------------------Const for File:
+//--------------------Const for Engineer File:
 const Engineer = require('../lib/Engineer');
 //--------------------Initializing "Engineer":
 describe('Engineer', () => {

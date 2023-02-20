@@ -5,12 +5,12 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const template = require("./src/template");
-//-------------Arrays for each Class; Manager, Engineer and Intern:
+//-------------Arrays for each Class; Manager, Engineer, Intern and Employee:
 const managers = [];
 const engineers = [];
 const interns = [];
 const employee =[];
-//-------------Const for Manager Questions (caught in an Array):
+//-------------Const for Manager Questions (Answers will be Caught in an Array):
 const managerQuestions = [
 {
     type: 'input',
@@ -65,7 +65,7 @@ const managerQuestions = [
     }
   },
 ];
-//-------------Const for Engineer Questions (caught in an Array):
+//-------------Const for Engineer Questions (Answers will be Caught in an Array):
 const engineerQuestions = [
     {
         type: 'input',
@@ -120,7 +120,7 @@ const engineerQuestions = [
         }
       },
     ];
-//-------------Const for Intern Questions (caught in an Array):
+//-------------Const for Intern Questions (Answers will be Caught in an Array):
 const internQuestions = [
     {
         type: 'input',
