@@ -132,11 +132,15 @@ We started with nothing and I had to create a index.js file that used Node.js to
 N/A
 
 # Usage
-To use and view this challenge you will need to fork or clone this repo to your machine. Then using intergrated terminal you can luanch "npm start", fill in the information as prompted and the HTML file will be generated. You can then right click on the generated HTML file and view in the web browser :-)
+To use and view this challenge you will need to fork or clone this repo to your machine. Then using intergrated terminal you can launch "npm start", fill in the information as prompted and the HTML file will be generated. You can then right click on the generated HTML file (located in the "dist" folder) and view in the web browser :-)
 
-The following image shows the web application's appearance:
+The follwing link will show a walk through of the working application:
+https://drive.google.com/file/d/1E04gktboB8i2qC0lqeUQJiMkUaqC16wZ/view?usp=sharing
 
-![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./assets/images/Bens-WeatherApp-Deployed-ScreenShot.png)
+The following image's shows the web application's A) Working Console which includes User Input and all Tests passing, B) Deployed HTML file within the Browser:
+
+![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./images/Ben_Armstrong_OOP_TeamProfileGenerator_ScreenShot_WorkingConsole.PNG)
+![My Web Development Portfolio webpage includes a navigation bar, a professional head shot image, multiple links (placeholders at this stage) to projects completed within the UniSA Full Stack Web Development course, and working links to contact me - even download an updated resume.](./images/Ben_Armstrong_OOP_TeamProfileGenerator_ScreenShot_DeployedHTML.PNG)
 
 # Credits
 With special thanks to the UniSA Full Stack Web Development Class.
